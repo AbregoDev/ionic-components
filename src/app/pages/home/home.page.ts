@@ -17,12 +17,17 @@ export class HomePage {
         {
             icon: 'american-football-outline',
             name: 'Action Sheet',
-            redirectTo: '/action-sheet'
+            redirectTo: '/action-sheet',
         },
         {
             icon: 'alert-circle-outline',
             name: 'Alert',
-            redirectTo: '/alert'
-        }
+            redirectTo: '/alert',
+        },
+        {
+            icon: 'person-circle-outline',
+            name: 'Avatar',
+            redirectTo: '/avatar',
+        },
     ];
 }
