@@ -38,5 +38,10 @@ export class HomePage {
             name: 'Card',
             redirectTo: '/card',
         },
+        {
+            icon: 'checkmark-circle-outline',
+            name: 'Checkbox',
+            redirectTo: '/checkbox',
+        },
     ];
 }
