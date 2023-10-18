@@ -1,0 +1,66 @@
+<app-header title="fab"></app-header>
+
+<ion-content>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" edge="true">
+        <ion-fab-button>
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="top">
+            <ion-fab-button>
+                <ion-icon name="document"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="color-palette"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="globe"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <ion-fab slot="fixed" vertical="bottom" horizontal="start" edge="true">
+        <ion-fab-button color="success" size="small">
+            <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab slot="fixed" vertical="top" horizontal="end">
+        <ion-fab-button color="danger">
+            <ion-icon name="logo-angular"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="bottom">
+            <ion-fab-button>
+                <ion-icon name="globe"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="document"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+
+        <ion-fab-list side="start">
+            <ion-fab-button color="orange">
+                <ion-icon name="logo-html5"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="blue">
+                <ion-icon name="logo-css3"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="warning">
+                <ion-icon name="logo-javascript"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <ion-list>
+        <ion-item *ngFor="let item of data; index as i">
+            <ion-label>{{ i }}</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>Footer</ion-title>
+    </ion-toolbar>
+</ion-footer>
