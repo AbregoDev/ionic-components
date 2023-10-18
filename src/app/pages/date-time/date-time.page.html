@@ -1,0 +1,34 @@
+<app-header title="Datetime"></app-header>
+
+<ion-content class="ion-padding">
+    <h3>Datetime modal</h3>
+    <ion-datetime-button datetime="ion-datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+            <ion-datetime id="ion-datetime">
+            </ion-datetime>
+        </ng-template>
+    </ion-modal>
+
+    <h3>Min and Max dates</h3>
+    <pre>Current date: {{ currentDate }}</pre>
+    <pre>Min date: {{ minDate }}</pre>
+    <pre>Max date: {{ maxDate }}</pre>
+
+    <ion-datetime id="ion-datetime"
+        [value]="currentDate"
+        [min]="minDate"
+        [max]="maxDate">
+    </ion-datetime>
+
+    <h3>Datetime restringed values</h3>
+    <p>Allow only 1-to-5 days</p>
+    <ion-datetime dayValues="1,2,3,4,5"></ion-datetime>
+
+    <h3>Locale calendar</h3>
+    <ion-datetime locale="es-ES"></ion-datetime>
+
+    <h3>Month-Year presentation</h3>
+    <ion-datetime presentation="month-year"></ion-datetime>
+</ion-content>
