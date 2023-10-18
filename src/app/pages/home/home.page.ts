@@ -63,5 +63,10 @@ export class HomePage {
             name: 'Infinite scroll',
             redirectTo: '/infinite-scroll',
         },
+        {
+            icon: 'create-outline',
+            name: 'Input',
+            redirectTo: '/input',
+        },
     ];
 }
