@@ -78,5 +78,10 @@ export class HomePage {
             name: 'Reorder',
             redirectTo: '/reorder',
         },
+        {
+            icon: 'refresh-circle-outline',
+            name: 'Loading',
+            redirectTo: '/loading',
+        },
     ];
 }
