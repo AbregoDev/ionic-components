@@ -70,7 +70,7 @@ export class HomePage {
         },
         {
             icon: 'list-outline',
-            name: 'List',
+            name: 'Sliding Item',
             redirectTo: '/list',
         },
     ];
