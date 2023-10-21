@@ -56,8 +56,8 @@ const routes: Routes = [
         loadChildren: () => import('./pages/input/input.module').then(m => m.InputPageModule)
     },
     {
-        path: 'list',
-        loadChildren: () => import('./pages/list/list.module').then(m => m.ListPageModule)
+        path: 'sliding-item',
+        loadChildren: () => import('./pages/sliding-item/sliding-item.module').then(m => m.SlidingItemPageModule)
     },
     {
         path: 'reorder',

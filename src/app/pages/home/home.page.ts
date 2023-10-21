@@ -71,7 +71,7 @@ export class HomePage {
         {
             icon: 'list-outline',
             name: 'Sliding Item',
-            redirectTo: '/list',
+            redirectTo: '/sliding-item',
         },
         {
             icon: 'reorder-three-outline',

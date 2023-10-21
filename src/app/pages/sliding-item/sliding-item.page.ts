@@ -5,14 +5,14 @@ import { DataService } from 'src/app/services/data.service';
 
 @Component({
     selector: 'app-list',
-    templateUrl: './list.page.html',
+    templateUrl: './sliding-item.page.html',
     styles: [`
         .small-text {
             font-size: 12px;
         }
     `]
 })
-export class ListPage {
+export class SlidingItemPage {
 
     users!: Observable<any>;
 

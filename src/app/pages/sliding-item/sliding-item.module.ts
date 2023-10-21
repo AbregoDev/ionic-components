@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
+import { SlidingItemPage } from './sliding-item.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -13,8 +13,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
         FormsModule,
         IonicModule,
         ComponentsModule,
-        RouterModule.forChild([{ path: '', component: ListPage }]),
+        RouterModule.forChild([{ path: '', component: SlidingItemPage }]),
     ],
-    declarations: [ListPage]
+    declarations: [SlidingItemPage]
 })
-export class ListPageModule { }
+export class SlidingItemPageModule { }
