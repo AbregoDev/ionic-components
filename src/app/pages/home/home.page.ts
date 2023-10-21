@@ -73,5 +73,10 @@ export class HomePage {
             name: 'Sliding Item',
             redirectTo: '/list',
         },
+        {
+            icon: 'reorder-three-outline',
+            name: 'Reorder',
+            redirectTo: '/reorder',
+        },
     ];
 }

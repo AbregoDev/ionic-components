@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Reorder</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="isListDisabled = !isListDisabled">
+                <ion-icon slot="icon-only"
+                    color="warning"
+                    [name]="isListDisabled ? 'lock-closed-outline' : 'lock-open-outline'">
+                </ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-reorder-group [disabled]="isListDisabled"
+            (ionItemReorder)="handleReorder($any($event))">
+            <ion-item *ngFor="let lang of langs">
+                <ion-label>{{ lang }}</ion-label>
+                <ion-reorder slot="end">
+                    <ion-icon name="planet-outline"></ion-icon>
+                </ion-reorder>
+            </ion-item>
+        </ion-reorder-group>
+    </ion-list>
+</ion-content>
