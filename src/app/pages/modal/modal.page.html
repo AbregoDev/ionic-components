@@ -4,4 +4,8 @@
     <ion-button expand="block" (click)="showModal()">
         Open modal
     </ion-button>
+
+    <pre>
+        {{ (receivedData | json) ?? 'undefined' }}
+    </pre>
 </ion-content>

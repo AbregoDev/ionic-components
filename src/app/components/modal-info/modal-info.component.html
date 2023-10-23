@@ -5,7 +5,15 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+    <pre>
+        {{ nombre }} - {{ tipoUsuario }}
+    </pre>
+
     <ion-button expand="block" (click)="exit()">
         Exit without args
+    </ion-button>
+
+    <ion-button expand="block" (click)="exit({ name: 'Daniel', userType: 'root' })">
+        Exit with args
     </ion-button>
 </ion-content>

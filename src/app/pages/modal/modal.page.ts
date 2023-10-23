@@ -8,6 +8,8 @@ import { ModalInfoComponent } from 'src/app/components/modal-info/modal-info.com
 })
 export class ModalPage implements OnInit {
 
+    receivedData: any;
+
     constructor(private modalCtrl: ModalController) { }
 
     ngOnInit() {
@@ -15,9 +17,17 @@ export class ModalPage implements OnInit {
 
     async showModal() {
         const modal = await this.modalCtrl.create({
-            component: ModalInfoComponent
+            component: ModalInfoComponent,
+            componentProps: {
+                nombre: 'Bryan',
+                tipoUsuario: 'Admin',
+            }
         });
 
         await modal.present();
+
+        const { data } = await modal.onDidDismiss();
+
+        this.receivedData = data;
     }
 }
