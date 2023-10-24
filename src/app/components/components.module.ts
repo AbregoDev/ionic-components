@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { ModalInfoComponent } from './modal-info/modal-info.component';
+import { PopOverInfoComponent } from './pop-over/pop-over-info.component';
 
 
 
@@ -10,6 +11,7 @@ import { ModalInfoComponent } from './modal-info/modal-info.component';
     declarations: [
         HeaderComponent,
         ModalInfoComponent,
+        PopOverInfoComponent,
     ],
     imports: [
         CommonModule,
@@ -18,6 +20,7 @@ import { ModalInfoComponent } from './modal-info/modal-info.component';
     exports: [
         HeaderComponent,
         ModalInfoComponent,
+        PopOverInfoComponent,
     ]
 })
 export class ComponentsModule { }

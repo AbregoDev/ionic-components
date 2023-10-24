@@ -73,5 +73,10 @@
         "icon": "browsers-outline",
         "name": "Modal",
         "redirectTo": "/modal"
+    },
+    {
+        "icon": "stop-outline",
+        "name": "Popover",
+        "redirectTo": "/pop-over"
     }
 ]
