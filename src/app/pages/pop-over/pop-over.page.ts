@@ -16,16 +16,16 @@ export class PopOverPage implements OnInit {
     async presentPopover(event: any) {
         console.log({ event });
 
-        const popver = await this.popoverCtrl.create({
+        const popover = await this.popoverCtrl.create({
             component: PopOverInfoComponent,
             event,
             translucent: true,
             backdropDismiss: false,
         });
 
-        await popver.present();
+        await popover.present();
 
-        const { data } = await popver.onWillDismiss();
+        const { data } = await popover.onWillDismiss();
         console.log(data);
     }
 
