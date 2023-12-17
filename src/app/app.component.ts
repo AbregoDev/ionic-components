@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
 import { MenuItem } from './interfaces/menu-item.interface';
 import { DataService } from './services/data.service';
+
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
     selector: 'app-root',
