@@ -93,5 +93,10 @@
         "icon": "search-outline",
         "name": "search",
         "redirectTo": "/search"
+    },
+    {
+        "icon": "file-tray-stacked-outline",
+        "name": "Segment",
+        "redirectTo": "/segment"
     }
 ]
