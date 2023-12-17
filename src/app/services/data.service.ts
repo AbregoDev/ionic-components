@@ -24,4 +24,8 @@ export class DataService {
     getMenuItems(): MenuItem[] {
         return data as MenuItem[];
     }
+
+    getCharacters() {
+        return this.http.get('/assets/data/characters.json');
+    }
 }
