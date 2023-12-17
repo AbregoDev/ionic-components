@@ -1,0 +1,29 @@
+<app-header title="Slides"></app-header>
+
+<ion-content>
+    <swiper-container (swiperslidechange)="slideChange($event)"
+        [pagination]="true">
+        <swiper-slide>
+            <div class="content slide1">
+                <h1>Slide 1</h1>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="content slide2">
+                <h1>Slide 2</h1>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="content slide3">
+                <h1>Slide 3</h1>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <ion-toast
+        [isOpen]="isToastOpen"
+        [message]="toastMessage"
+        duration="2000"
+        (didDismiss)="setToastVisibility(false)">
+    </ion-toast>
+</ion-content>

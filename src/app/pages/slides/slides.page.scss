@@ -1,0 +1,26 @@
+swiper-container {
+    height: calc(100% - 20px);
+    margin: 10px 0;
+
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-color: #555;
+
+    .content {
+        height: 100%;
+        margin: 0 10px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide1 {
+        background-color: yellowgreen;
+    }
+    .slide2 {
+        background-color: dodgerblue;
+    }
+    .slide3 {
+        background-color: darkgoldenrod;
+    }
+}
