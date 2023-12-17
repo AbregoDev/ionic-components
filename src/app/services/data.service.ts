@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+import { delay } from 'rxjs';
+
 import data from '../../assets/data/menu-items.json';
 import { MenuItem } from '../interfaces/menu-item.interface';
 
@@ -26,6 +28,6 @@ export class DataService {
     }
 
     getCharacters() {
-        return this.http.get('/assets/data/characters.json');
+        return this.http.get('/assets/data/characters.json').pipe(delay(2000));
     }
 }
