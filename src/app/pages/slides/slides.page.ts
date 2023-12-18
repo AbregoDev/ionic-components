@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
     selector: 'app-slides',
@@ -7,19 +8,26 @@ import { Component } from '@angular/core';
 })
 export class SlidesPage {
 
-    isToastOpen: boolean = false;
-    toastMessage: string = '';
+    constructor(private toastController: ToastController) { }
 
     slideChange({ detail }: any) {
         const {
             previousIndex: previousSlideIndex,
             activeIndex: currentSlideIndex
         } = detail[0];
-        this.toastMessage = `Previous slide: ${previousSlideIndex}, Current slide: ${currentSlideIndex}`;
-        this.isToastOpen = true;
+
+        this.presentStatusToast(previousSlideIndex, currentSlideIndex);
     }
 
-    setToastVisibility(isToastVisible: boolean) {
-        this.isToastOpen = isToastVisible;
+    async presentStatusToast(previousIndex: number, currentIndex: number) {
+        const message = `Previous slide: ${previousIndex}, Current slide: ${currentIndex}`;
+        
+        const toast = await this.toastController.create({
+            message,
+            duration: 1500,
+            position: 'bottom',
+        });
+
+        await toast.present();
     }
 }
